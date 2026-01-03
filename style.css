@@ -1,0 +1,105 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    user-select: none;
+  }
+  
+body {
+    position: relative;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Press Start 2P', cursive;
+    background-color: #99d9ea;
+}
+  
+.world {
+    overflow: hidden;
+    position: relative;
+    width: 480px;
+    height: 270px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    border: 2px solid #333;
+    border-radius: 12px;
+    max-width: 90vw;
+    max-height: 50vh;
+    margin-top: 80px;
+  }
+  
+.score {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 18px;
+    color: #333;
+}
+  
+.highscore {
+    position: absolute;
+    top: 20px;
+    right: 120px;
+    font-size: 18px;
+    color: #99d9ea;
+}
+.separator {
+    position: absolute;
+    top: 20px;
+    right: 100px;
+    font-size: 18px;
+    color: #99d9ea;
+}
+  
+  .start-screen {
+    position: absolute;
+    font-size: 14px;
+    color: #535353;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    white-space: nowrap;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .ground {
+    --left: 0;
+    position: absolute;
+    width: 300%;
+    bottom: 0;
+    left: calc(var(--left) * 1%);
+    height: 30px;
+  }
+  
+  .clouds {
+    --left: 0;
+    top: 10px;
+    position: absolute;
+    width: 150%;
+    left: calc(var(--left) * 1%);
+  }
+
+.dino {
+    --bottom: 0;
+    position: absolute;
+    left: 20px;
+    height: 30%;
+    bottom: calc(var(--bottom) * 1%);
+}
+  
+.cactus {
+    position: absolute;
+    left: calc(var(--left) * 1%);
+    height: 30%;
+    bottom: 0;
+}
+
+.logo {
+    position: absolute;
+    left: 20px; 
+    top: 20px;
+    transform: none;
+}
